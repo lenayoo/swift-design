@@ -12,6 +12,7 @@ const Header = ({ updateList }: { updateList: (value: string) => void }) => {
   const setHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     updateList(purpose);
+    setPurpose("");
   };
 
   return (
