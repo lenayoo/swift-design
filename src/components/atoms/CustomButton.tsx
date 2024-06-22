@@ -3,10 +3,8 @@ import AddIcon from "@mui/icons-material/Add";
 
 export const CustomButton = () => {
   return (
-    <div>
-      <Button variant="outlined">
-        <AddIcon />
-      </Button>
-    </div>
+    <Button variant="outlined" type="submit">
+      <AddIcon />
+    </Button>
   );
 };

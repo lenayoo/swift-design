@@ -2,15 +2,23 @@ import { useState } from "react";
 import { CustomButton } from "./atoms/CustomButton";
 import { CustomInput } from "./atoms/CustomInput";
 
-const Header = () => {
+const Header = ({ updateList }: { updateList: (value: string) => void }) => {
   const [purpose, setPurpose] = useState<string>("");
 
   const purposeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPurpose(e.target.value);
   };
 
+  const setHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    updateList(purpose);
+  };
+
   return (
-    <form className="flex flex-row justify-center items-center pt-5 pb-3">
+    <form
+      className="flex flex-row justify-center items-center pt-5 pb-3"
+      onSubmit={setHandler}
+    >
       <CustomInput changeHandler={purposeHandler} value={purpose} />
       <CustomButton />
     </form>
