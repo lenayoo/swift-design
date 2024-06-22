@@ -6,10 +6,8 @@ import { Container } from "./components/Container";
 function App() {
   const [containerList, setContainerList] = useState<JSX.Element[]>([]);
   const addContainer = () => {
-    console.log("is clicked");
     setContainerList((prevContainer) => [...prevContainer, <Container />]);
   };
-  console.log(containerList);
 
   return (
     <>
@@ -20,7 +18,6 @@ function App() {
       <div onClick={addContainer}>
         <AddCircleIcon fontSize="large" color="action" />
       </div>
-      <Container />
       <div>{containerList}</div>
     </>
   );
