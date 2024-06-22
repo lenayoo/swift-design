@@ -1,5 +1,4 @@
-# React + TypeScript + Vite
-
+# design for swift app
 preDesign for first swift app
 
 - [x] make 100days app
