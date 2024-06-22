@@ -2,7 +2,7 @@
 
 preDesign for first swift app
 
-- [ ] make 100days app
+- [x] make 100days app
 - [ ] add countdown function
 - [ ] login function
 - [ ] add responsive
