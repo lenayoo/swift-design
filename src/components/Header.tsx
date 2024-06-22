@@ -1,7 +1,13 @@
-import React from "react";
+import { CustomButton } from "./atoms/CustomButton";
+import { CustomInput } from "./atoms/CustomInput";
 
 const Header = () => {
-  return <div>Header</div>;
+  return (
+    <form>
+      <CustomInput />
+      <CustomButton />
+    </form>
+  );
 };
 
 export default Header;
