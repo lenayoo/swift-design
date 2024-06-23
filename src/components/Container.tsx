@@ -25,7 +25,7 @@ export const Container = () => {
         </div>
         <Header updateList={listHandler} />
         <h1>{newList}</h1>
-        <Countdown />
+        {newList && <Countdown />}
       </div>
     )
   );
