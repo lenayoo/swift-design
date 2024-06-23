@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./Header";
 import Countdown from "./Countdown";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+import "../App.css";
 
 export const Container = () => {
   const [newList, setNewList] = useState<string>("");
@@ -18,7 +19,7 @@ export const Container = () => {
 
   return (
     isVisible && (
-      <div className="w-[450px] h-[200px] bg-blue border border-gray-300 rounded shadow-lg mt-5 mb-3s relative">
+      <div className="w-[450px] min-h-[200px] bg-blue border border-gray-300 rounded shadow-lg mt-5 mb-1 p-5 relative resizable">
         <div className="absolute -top-3 -right-3" onClick={removeHandler}>
           <HighlightOffIcon fontSize="large" color="action" />
         </div>
