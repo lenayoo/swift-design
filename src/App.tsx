@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div className="pb-2">
+      <div className="pb-2 ">
         <h1 className="text-3xl font-bold underline mb-5">Hello Lena!</h1>
         <div className="m-2 text-xl">
           What do you want to achieve 100 days later?

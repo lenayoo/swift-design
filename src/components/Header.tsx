@@ -17,7 +17,7 @@ const Header = ({ updateList }: { updateList: (value: string) => void }) => {
 
   return (
     <form
-      className="flex flex-row justify-center items-center pt-5 pb-3"
+      className="flex flex-col justify-center items-center pt-5 pb-3"
       onSubmit={setHandler}
     >
       <CustomInput changeHandler={purposeHandler} value={purpose} />

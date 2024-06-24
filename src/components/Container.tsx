@@ -19,7 +19,7 @@ export const Container = () => {
 
   return (
     isVisible && (
-      <div className="w-[450px] min-h-[200px] bg-blue border border-gray-300 rounded shadow-lg mt-5 mb-1 p-5 relative resizable">
+      <div className="w-[310px] min-h-[200px] bg-blue border border-gray-300 rounded shadow-lg mt-5 mb-1 p-5 relative card">
         <div className="absolute -top-3 -right-3" onClick={removeHandler}>
           <HighlightOffIcon fontSize="large" color="action" />
         </div>
